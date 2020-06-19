@@ -11,11 +11,11 @@ export default function ServerList() {
       <Separator />
 
       <ServerButton />
-      <ServerButton hasNotifications />
+      <ServerButton hasNotification mentions={12} />
       <ServerButton mentions={7} />
       <ServerButton />
       <ServerButton />
-      <ServerButton hasNotifications />
+      <ServerButton hasNotification />
       <ServerButton />
       <ServerButton mentions={3} />
       <ServerButton />
