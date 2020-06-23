@@ -1,29 +1,74 @@
 import styled from "styled-components";
-import { MdExpandMore } from "react-icons/md";
+import { BsHash } from "react-icons/bs";
+import { MdPersonAdd, MdSettings } from "react-icons/md";
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 11px 0 16px;
-  background-color: var(--secondary);
-
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
-  z-index: 2;
-`;
-
-export const Title = styled.h1`
-  font-size: 16px;
-  font-weight: bold;
-
-  color: var(--white);
-`;
-
-export const ExpandIcon = styled(MdExpandMore)`
-  width: 28px;
-  height: 28px;
-
-  color: var(--white);
   cursor: pointer;
+
+  padding: 5px 3px;
+  border-radius: 5px;
+
+  background-color: transparent;
+
+  transition: background-color 0.2s;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
+  > div span {
+    margin-left: 5px;
+    color: var(--senary);
+  }
+
+  &:hover,
+  &.active {
+    background-color: var(--quinary);
+
+    > div span {
+      color: var(--white);
+    }
+  }
+`;
+
+export const HashtagIcon = styled(BsHash)`
+  width: 20px;
+  height: 20px;
+
+  color: var(--symbol);
+`;
+
+export const InviteIcon = styled(MdPersonAdd)`
+  width: 16px;
+  height: 16px;
+
+  color: var(--symbol);
+  cursor: pointer;
+
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--white);
+  }
+`;
+
+export const SettingsIcon = styled(MdSettings)`
+  width: 16px;
+  height: 16px;
+
+  margin-left: 4px;
+
+  color: var(--symbol);
+  cursor: pointer;
+
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--white);
+  }
 `;

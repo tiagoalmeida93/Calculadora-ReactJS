@@ -1,19 +1,20 @@
 import React from "react";
 
 import { Container, Category, AddCategoryIcon } from "./styles";
+import ChannelButton from "../ChannelButton";
 
 export default function ChannelList() {
   return (
     <Container>
       <Category>
         <span>Canais de texto</span>
+        <AddCategoryIcon />
       </Category>
-      <AddCategoryIcon />
 
-      {/* <ChannelButton channelName="chat-livre" />
+      <ChannelButton channelName="chat-livre" />
       <ChannelButton channelName="trabalho" />
       <ChannelButton channelName="estudo" />
-      <ChannelButton channelName="games" /> */}
+      <ChannelButton channelName="games" />
     </Container>
   );
 }

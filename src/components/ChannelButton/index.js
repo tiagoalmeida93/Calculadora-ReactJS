@@ -1,12 +1,24 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-import { Container, Title, ExpandIcon } from "./styles";
+import { Container, HashtagIcon, InviteIcon, SettingsIcon } from "./styles";
 
-export default function ServerName() {
+ChannelButton.propTypes = {
+  channelName: PropTypes.string.isRequired,
+  selected: PropTypes.bool,
+};
+
+export default function ChannelButton({ channelName, selected }) {
   return (
-    <Container>
-      <Title>Servidor do @TiagoAlmeidz</Title>
-      <ExpandIcon />
+    <Container className={selected ? "active" : ""}>
+      <div>
+        <HashtagIcon />
+        <span>{channelName}</span>
+      </div>
+      <div>
+        <InviteIcon />
+        <SettingsIcon />
+      </div>
     </Container>
   );
 }
