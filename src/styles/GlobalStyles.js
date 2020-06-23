@@ -38,6 +38,6 @@ export default createGlobalStyle`
  
     --link: #5d80d6;
  
-    --rocketseat: #6633cc;
+    --home: #98C6FF;
   }
 `;

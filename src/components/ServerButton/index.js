@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "./styles";
 import PropTypes from "prop-types";
 
-import Logo from "../../assets/Logo.svg";
+import Logo from "../../assets/Logo.png";
 
 ServerButton.propTypes = {
   selected: PropTypes.bool,

@@ -13,7 +13,7 @@ export const Button = styled.button`
   margin: 6px 12px 2px 11px;
 
   background-color: ${(props) =>
-    props.isHome ? "var(--rocketseat)" : "var(--primary)"};
+    props.isHome ? "var(--home)" : "var(--primary)"};
 
   position: relative;
   cursor: pointer;
@@ -68,6 +68,6 @@ export const Button = styled.button`
   &:hover {
     border-radius: 16px;
     background-color: ${(props) =>
-      props.isHome ? "var(--rocketseat)" : "var(--discord)"};
+      props.isHome ? "var(--home)" : "var(--discord)"};
   }
 `;
