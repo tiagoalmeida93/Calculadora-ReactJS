@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Messages, InputWrapper, Input, InputIcon } from "./styles";
+import { Container, Messages, InputWrapper, Input } from "./styles";
 
 export default function ChannelData() {
   return (
@@ -8,8 +8,7 @@ export default function ChannelData() {
       <Messages />
 
       <InputWrapper>
-        <Input />
-        <InputIcon />
+        <Input type="text" placeholder="Conversar em #chat-livre" />
       </InputWrapper>
     </Container>
   );

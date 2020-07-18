@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { MdSend } from "react-icons/md";
 
 export const Container = styled.div`
   grid-area: CD;
@@ -34,8 +33,26 @@ export const Messages = styled.h1`
   }
 `;
 
-export const InputWrapper = styled.div``;
+export const InputWrapper = styled.div`
+  width: 100%;
 
-export const Input = styled.input``;
+  padding: 0 16px;
+  margin-bottom: 10px;
+`;
 
-export const InputIcon = styled(MdSend)``;
+export const Input = styled.input`
+  width: 100%;
+  height: 44px;
+
+  padding: 0 10px 0 57px;
+  border-radius: 7px;
+
+  color: var(--white);
+  background-color: var(--chat-input);
+
+  position: relative;
+
+  &::placeholder {
+    color: var(--gray);
+  }
+`;
