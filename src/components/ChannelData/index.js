@@ -29,12 +29,13 @@ export default function ChannelData() {
         <ChannelMessage
           author="Kratos"
           date={new Intl.DateTimeFormat("pt-BR").format(Date.now())}
-          isBot
           content={
             <>
               <Mention>@Tiago Almeida</Mention>, React ou Inglês?
             </>
           }
+          isBot
+          hasMention
         />
       </Messages>
 
