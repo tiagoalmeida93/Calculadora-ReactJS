@@ -1,5 +1,5 @@
 <h1 align="center">
-UI Clone - Discord
+UI - Discord
 </h1>
 
 <p align="center">Discord UI Clone</p>
