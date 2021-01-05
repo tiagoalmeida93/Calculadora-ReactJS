@@ -2,7 +2,7 @@
 UI - Discord
 </h1>
 
-<p align="center">Discord UI Clone</p>
+<p align="center">Discord UI</p>
 
 <p align="center">
   <a href="https://github.com/tiagoalmeida93/Discord-Interface/graphs/contributors">
